@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Control Finance</title>
+  <link rel="stylesheet" href="/src/styles/reset.css">
+  <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Control Finance - Seu controle financeiro" />
+  <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+  <link rel="stylesheet" href="./src/styles/modal.css">
+  <link rel="stylesheet" href="./src/styles/index.css" />
+
+
+
+</head>
+
+<body>
+
+  <header class="header__conteiner">
+    <div class="header__top">
+      <p>Control <span class="header__title">Finance</span></p>
+      <button class="button__title">Registrar novo valor</button>
+    </div>
+
+  </header>
+  <main >
+
+    <div class="conteiner">
+      <section class="financeiro__conteiner">
+        <h2>Resumo financeiro</h2>
+        <div class="financeiro__buttons">
+          <button class="button__todos btn">Todos</button>
+          <button class="button__Entradas btn">Entradas</button>
+          <button class="saidas__button btn">Saídas</button>
+        </div>
+      </section>
+      <section class="soma__conteiner">
+        <div class="soma__valores">
+          <h2>Soma dos valores</h2>
+          <P>R$ 2.120,00</P>
+        </div>
+      </section>
+      <section class="conteiner__itens">
+        <ul class="itens__card">
+          <li>
+            <h2>R$ 40,00</h2>
+            <div class="trash__valores">
+              <p>Entrada</p>
+              <img src="/src/assets/trash.png" alt="trash">
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+
+    </div>
+
+
+
+
+  </main  >
+  <dialog class="modal__controller">
+
+    <form>
+      <div class="controller">
+        <div class="registro__valores">
+          <h2>Registro de valor</h2>
+          <button class="close__button">X</button>
+        </div>
+
+        <p>Digite o valor em seguida aperte no botão referente ao tipo do valor</p>
+
+        <label class="valor__entrada" for="valor">Valor</label>
+        <div class="conteiner__valor">
+          <span class="span__valor">R$</span>
+          <input id="valor" class="entrada__do-valor" type="number" placeholder=" 00,00">
+        </div>
+
+
+        <fieldset id="tipo__valor">
+          <h2 class="legenda__do-valor">Tipo de valor</h2>
+
+          <input hidden type="radio" id="entrada" value="0" name="tipoValor">
+          <label class="entrada__label" for="entrada">Entrada</label>
+
+          <input hidden type="radio" id="saida" value="1" name="tipoValor">
+          <label class="saida__label" for="saida">Saída</label>
+
+
+        </fieldset>
+
+        <div class="buttons__modal">
+          <button class="button__cancelar">Cancelar</button>
+          <button class="button__inserir-valor">Inserir valor</button>
+        </div>
+      </div>
+    </form>
+
+  </dialog>
+  <script src="./src/scripts/modal.js"></script>
+  <script src="./src/scripts/valuesData.js"></script>
+  <script src="./src/scripts/index.js"></script>
+</body>
+
+</html>

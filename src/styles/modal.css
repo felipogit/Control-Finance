@@ -1,0 +1,193 @@
+.modal__controller {
+   height: max-content;
+   border: none;
+}
+
+.registro__valores {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.registro__valores>h2 {
+   font-size: var(--font-size-2);
+   font-weight: var(--font-weight-1);
+   line-height: 1.21rem;
+}
+
+.close__button {
+   background-color: var(--color-grey-5);
+   border: none;
+   width: 35px;
+   height: 30px;
+   font-size: var(--font-size-2);
+   cursor: pointer;
+}
+
+.close__button:hover{
+   background-color: var(--color-grey-4);
+}
+
+.controller {
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+
+}
+
+.controller>p {
+   color: var(--color-grey-2);
+   font-size: var(--font-size-3);
+   line-height: var(--font-line-height-1);
+   margin-top: 20px;
+}
+
+.tipo__valor {
+   display: flex;
+   gap: 8px;
+   margin-top: 20px;
+}
+
+.tipo__valor>label {
+   font-size: var(--font-size-3);
+   font-weight: var(--font-weight-2);
+}
+
+.entrada__do-valor {
+   height: 44px;
+   width: 100%;
+   border-radius: var(--radius-1);
+   border: 1px solid var(--color-grey-3);
+   padding-left: 2rem;
+}
+
+.entradas__saidas {
+   display: flex;
+   flex-direction: column;
+   margin-top: 25px;
+   gap: 10px;
+}
+
+.buttons__modal {
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+
+}
+
+.buttons__modal>button {
+   width: 50%;
+   height: 31px;
+   border-radius: var(--radius-1);
+   border: none;
+}
+
+.button__cancelar {
+   color: var(--color-grey-2);
+   font-size: var(--font-size-3);
+   font-weight: var(--font-weight-1);
+   cursor: pointer;
+}
+
+.button__cancelar:hover{
+   background-color: var(--color-grey-4);
+}
+.button__inserir-valor {
+   background-color: var(--color-brand-1);
+   color: var(--fixed-white);
+   font-weight: var(--font-weight-1);
+   font-size: var(--font-size-3);
+   cursor: pointer;
+}
+
+.button__inserir-valor:hover{
+   background-color: var(--color-brand-2);
+}
+
+.entrada__saida {
+   font-weight: var(--font-weight-2);
+   font-size: var(--font-size-3);
+   line-height: var(--font-line-height-1);
+}
+
+.entrada__label {
+   width: 295px;
+   border: 1px solid var(--color-grey-3);
+   height: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: var(--radius-1);
+
+}
+
+.saida__label {
+   width: 295px;
+   border: 1px solid var(--color-grey-3);
+   height: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: var(--radius-1);
+}
+
+input[type="radio"]:checked + label {
+   background-color: var(--color-grey-4);
+}
+
+#tipo__valor{
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+#tipo__valor > label{
+   align-self: center;
+   width: 100%;
+   cursor: pointer;
+}
+
+#tipo__valor > label:hover{
+   background-color: var(--color-grey-4);
+}
+
+.legenda__do-valor{
+   display: flex;
+   align-items: center;
+   font-size: var(--font-size-3);
+   font-weight: var(--font-weight-2);
+}
+
+.valor__entrada{
+   font-size: var(--font-size-3);
+   font-weight: var(--font-weight-2);
+}
+
+.conteiner__valor{
+   position: relative;
+}
+
+.span__valor{
+   position: absolute;
+   top: 13px;
+   left: 10px;
+
+}
+
+.entrada__do-valor{
+   outline: none;
+}
+
+ .modal__controller{
+   transform: translateY(-30%);
+   animation: slide-down 0.9s ease-in-out 1;
+ }
+ @keyframes slide-down {
+   0%{
+      transform:translateY(-100%) ;
+   }
+ }
+ 
+ 
